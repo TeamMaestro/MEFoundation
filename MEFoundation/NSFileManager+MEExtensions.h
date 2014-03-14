@@ -17,33 +17,4 @@
 
 @property (readonly,nonatomic) NSURL *ME_applicationSupportDirectoryURL;
 
-/**
- An asynchronous version of createFileAtPath:contents:attributes:
- 
- @param path The path at which to create the file
- @param contents The contents of the file
- @param attributes The attributes of the created file
- @param completion A completion block that is invoked when the operation completes
- @exception Thrown if _path_ or _contents_ are nil
- */
-- (void)ME_createFileAtPath:(NSString *)path contents:(NSData *)contents attributes:(NSDictionary *)attributes completion:(void (^)(BOOL success))completion;
-/**
- An asynchronous version of `copyItemAtURL:toURL:error:`.
- 
- @param srcURL The file URL that identifies the file you want to copy. The URL in this parameter must not be a file reference URL
- @param dstURL The URL at which to place the copy of srcURL. The URL in this parameter must not be a file reference URL and must include the name of the file in its new location
- @param completion The completion block that is invoked when the operation completes
- @exception NSException Thrown if _srcURL_ or _dstURL_ are `nil`
- */
-- (void)ME_copyItemAtURL:(NSURL *)srcURL toURL:(NSURL *)dstURL completion:(void (^)(BOOL success,NSError *error))completion;
-/**
- An asynchronous version of `moveItemAtURL:toURL:error:`.
- 
- @param srcURL The file URL that identifies the file or directory you want to move. The URL in this parameter must not be a file reference URL
- @param dstURL The new location for the item in srcURL. The URL in this parameter must not be a file reference URL and must include the name of the file or directory in its new location
- @param completion The completion that is invoked when the operation completes
- @exception NSException Thrown if _srcURL_ or _dstURL_ are `nil`
- */
-- (void)ME_moveItemAtURL:(NSURL *)srcURL toURL:(NSURL *)dstURL completion:(void (^)(BOOL success,NSError *error))completion;
-
 @end

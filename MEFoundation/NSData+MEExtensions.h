@@ -34,14 +34,4 @@
  */
 - (NSString *)ME_SHA512String;
 
-/**
- An asynchronous version of `writeToURL:options:error:`.
- 
- @param url The location to which to write the receiver's bytes
- @param mask A mask that specifies options for writing the data
- @param completion The completion block that is invoked when the operation completes
- */
-+ (void)ME_writeData:(NSData *)data toURL:(NSURL *)url options:(NSDataWritingOptions)options completion:(void (^)(BOOL success,NSError *error))completion;
-- (void)ME_writeToURL:(NSURL *)url options:(NSDataWritingOptions)options completion:(void (^)(BOOL success,NSError *error))completion;
-
 @end

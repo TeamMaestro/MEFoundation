@@ -21,23 +21,7 @@
 
 @implementation NSObject (MEExtensions)
 
-+ (void)ME_swapMethod:(SEL)oldSelector withMethod:(SEL)newSelector; {
-    Method originalMethod = class_getInstanceMethod(self, oldSelector);
-    Method newMethod = class_getInstanceMethod(self, newSelector);
-    const char *originalTypeEncoding = method_getTypeEncoding(originalMethod);
-    const char *newTypeEncoding = method_getTypeEncoding(newMethod);
-    
-    NSAssert2(!strcmp(originalTypeEncoding, newTypeEncoding), @"Method type encodings must be the same: %s vs. %s", originalTypeEncoding, newTypeEncoding);
-    
-    if(class_addMethod(self, oldSelector, method_getImplementation(newMethod), newTypeEncoding)) {
-        class_replaceMethod(self, newSelector, method_getImplementation(originalMethod), originalTypeEncoding);
-    }
-    else {
-        method_exchangeImplementations(originalMethod, newMethod);
-    }
-}
-
-static char kRepresentedObjectKey;
+static void const *kRepresentedObjectKey = &kRepresentedObjectKey;
 
 - (id)ME_representedObject; {
     return objc_getAssociatedObject(self, &kRepresentedObjectKey);

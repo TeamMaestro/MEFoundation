@@ -14,14 +14,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (MEExtensions)
-/**
- Swaps the implementation of oldSelector for the implementation of newSelector. Also known as "swizzling". This method should be used with care, but has its place.
- 
- @param oldSelector The selector that you want to replace (e.g. @selector(loadView)).
- @param newSelector The selector that will replace `oldSelector` (e.g. @selector(ME_loadView)).
- @exception NSException Thrown if the signature of `oldSelector` and `newSelector` do not match.
- */
-+ (void)ME_swapMethod:(SEL)oldSelector withMethod:(SEL)newSelector __attribute__((deprecated("use jr_swizzleMethod:withMethod:error: from jrswizzle pod (https://github.com/rentzsch/jrswizzle) instead")));
 
 /**
  Calls `objc_getAssociatedObject()` passing `self` and the appropriate key.

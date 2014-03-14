@@ -59,28 +59,4 @@
     return retval;
 }
 
-+ (void)ME_writeData:(NSData *)data toURL:(NSURL *)url options:(NSDataWritingOptions)options completion:(void (^)(BOOL success,NSError *error))completion; {
-    MEDispatchBackgroundAsync(^{
-        NSError *outError;
-        
-        if ([data writeToURL:url options:options error:&outError]) {
-            if (completion) {
-                MEDispatchMainAsync(^{
-                    completion(YES,nil);
-                });
-            }
-        }
-        else {
-            if (completion) {
-                MEDispatchMainAsync(^{
-                    completion(NO,outError);
-                });
-            }
-        }
-    });
-}
-- (void)ME_writeToURL:(NSURL *)url options:(NSDataWritingOptions)options completion:(void (^)(BOOL success,NSError *error))completion; {
-    [self.class ME_writeData:self toURL:url options:options completion:completion];
-}
-
 @end
