@@ -19,9 +19,88 @@
 #error This file requires ARC
 #endif
 
-static inline uint8_t MEHexValueForCharacter(unichar character);
-static inline uint8_t MEValueForCharacter(unichar character);
-static inline uint8_t MEBinaryValueForCharacter(unichar character);
+static inline uint8_t MEHexValueForCharacter(unichar character) {
+	switch (character) {
+		case '0':
+			return 0;
+		case '1':
+			return 1;
+		case '2':
+			return 2;
+		case '3':
+			return 3;
+		case '4':
+			return 4;
+		case '5':
+			return 5;
+		case '6':
+			return 6;
+		case '7':
+			return 7;
+		case '8':
+			return 8;
+		case '9':
+			return 9;
+		case 'a':
+		case 'A':
+			return 10;
+		case 'b':
+		case 'B':
+			return 11;
+		case 'c':
+		case 'C':
+			return 12;
+		case 'd':
+		case 'D':
+			return 13;
+		case 'e':
+		case 'E':
+			return 14;
+		case 'f':
+		case 'F':
+			return 15;
+		default:
+			return 0;
+	}
+}
+
+static inline uint8_t MEValueForCharacter(unichar character) {
+	switch (character) {
+		case '0':
+			return 0;
+		case '1':
+			return 1;
+		case '2':
+			return 2;
+		case '3':
+			return 3;
+		case '4':
+			return 4;
+		case '5':
+			return 5;
+		case '6':
+			return 6;
+		case '7':
+			return 7;
+		case '8':
+			return 8;
+		case '9':
+			return 9;
+		default:
+			return 0;
+	}
+}
+
+static inline uint8_t MEBinaryValueForCharacter(unichar character) {
+	switch (character) {
+		case '0':
+			return 0;
+		case '1':
+			return 1;
+		default:
+			return 0;
+	}
+}
 
 @implementation NSString (MEExtensions)
 
@@ -74,22 +153,10 @@ static inline uint8_t MEBinaryValueForCharacter(unichar character);
     return output;
 }
 
-- (NSString *)ME_localizedString; {
-    return NSLocalizedString(self, @"");
-}
-
 + (NSString *)ME_UUIDString; {
-    CFUUIDRef UUID = CFUUIDCreate(kCFAllocatorDefault);
-	CFStringRef UUIDString = CFUUIDCreateString(kCFAllocatorDefault, UUID);
-	
-	CFRelease(UUID);
-	
-    return (__bridge_transfer NSString *)UUIDString;
+    return [[NSUUID UUID] UUIDString];
 }
 
-@end
-
-@implementation NSString (MEHashing)
 - (NSString *)ME_MD5String {
     const char *str = [self UTF8String];
     
@@ -119,9 +186,6 @@ static inline uint8_t MEBinaryValueForCharacter(unichar character);
     
     return retval;
 }
-@end
-
-@implementation NSString (MENumberConversion)
 
 - (NSUInteger)ME_valueFromHexadecimalString; {
 	NSString *string = [self ME_stringByRemovingInvalidHexadecimalDigits];
@@ -244,102 +308,4 @@ static inline uint8_t MEBinaryValueForCharacter(unichar character);
 	return nil;
 }
 
-- (int64_t)ME_longLongValue; {
-    NSScanner *scanner = [NSScanner scannerWithString:self];
-    
-    [scanner setCharactersToBeSkipped:nil];
-    
-    int64_t retval;
-    
-    if ([scanner scanLongLong:&retval])
-        return retval;
-    
-    return LONG_LONG_MAX;
-}
-
 @end
-
-#pragma mark *** Number System Digit Definitions ***
-
-static inline uint8_t MEHexValueForCharacter(unichar character) {
-	switch (character) {
-		case '0':
-			return 0;
-		case '1':
-			return 1;
-		case '2':
-			return 2;
-		case '3':
-			return 3;
-		case '4':
-			return 4;
-		case '5':
-			return 5;
-		case '6':
-			return 6;
-		case '7':
-			return 7;
-		case '8':
-			return 8;
-		case '9':
-			return 9;
-		case 'a':
-		case 'A':
-			return 10;
-		case 'b':
-		case 'B':
-			return 11;
-		case 'c':
-		case 'C':
-			return 12;
-		case 'd':
-		case 'D':
-			return 13;
-		case 'e':
-		case 'E':
-			return 14;
-		case 'f':
-		case 'F':
-			return 15;
-		default:
-			return 0;
-	}
-}
-
-static inline uint8_t MEValueForCharacter(unichar character) {
-	switch (character) {
-		case '0':
-			return 0;
-		case '1':
-			return 1;
-		case '2':
-			return 2;
-		case '3':
-			return 3;
-		case '4':
-			return 4;
-		case '5':
-			return 5;
-		case '6':
-			return 6;
-		case '7':
-			return 7;
-		case '8':
-			return 8;
-		case '9':
-			return 9;
-		default:
-			return 0;
-	}
-}
-
-static inline uint8_t MEBinaryValueForCharacter(unichar character) {
-	switch (character) {
-		case '0':
-			return 0;
-		case '1':
-			return 1;
-		default:
-			return 0;
-	}
-}
