@@ -8,14 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		798D9B3718D3A31A00F0A2AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D9B3618D3A31A00F0A2AB /* Foundation.framework */; };
-		798D9B3C18D3A31A00F0A2AB /* MEFoundation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B3B18D3A31A00F0A2AB /* MEFoundation.h */; };
-		798D9B3E18D3A31A00F0A2AB /* MEFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B3D18D3A31A00F0A2AB /* MEFoundation.m */; };
 		798D9B4518D3A31A00F0A2AB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D9B4418D3A31A00F0A2AB /* XCTest.framework */; };
 		798D9B4618D3A31A00F0A2AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D9B3618D3A31A00F0A2AB /* Foundation.framework */; };
 		798D9B4818D3A31A00F0A2AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D9B4718D3A31A00F0A2AB /* UIKit.framework */; };
 		798D9B4B18D3A31A00F0A2AB /* libMEFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D9B3318D3A31A00F0A2AB /* libMEFoundation.a */; };
 		798D9B5118D3A31A00F0A2AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 798D9B4F18D3A31A00F0A2AB /* InfoPlist.strings */; };
 		798D9B5318D3A31A00F0A2AB /* MEFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B5218D3A31A00F0A2AB /* MEFoundationTests.m */; };
+		798D9B7818D3A42000F0A2AB /* NSArray+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6118D3A42000F0A2AB /* NSArray+MEExtensions.m */; };
+		798D9B7918D3A42000F0A2AB /* NSBundle+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6318D3A42000F0A2AB /* NSBundle+MEExtensions.m */; };
+		798D9B7A18D3A42000F0A2AB /* NSData+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6518D3A42000F0A2AB /* NSData+MEExtensions.m */; };
+		798D9B7B18D3A42000F0A2AB /* NSDate+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6718D3A42000F0A2AB /* NSDate+MEExtensions.m */; };
+		798D9B7C18D3A42000F0A2AB /* NSDictionary+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6918D3A42000F0A2AB /* NSDictionary+MEExtensions.m */; };
+		798D9B7D18D3A42000F0A2AB /* NSFileManager+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6B18D3A42000F0A2AB /* NSFileManager+MEExtensions.m */; };
+		798D9B7E18D3A42000F0A2AB /* NSMutableArray+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6D18D3A42000F0A2AB /* NSMutableArray+MEExtensions.m */; };
+		798D9B7F18D3A42000F0A2AB /* NSObject+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6F18D3A42000F0A2AB /* NSObject+MEExtensions.m */; };
+		798D9B8018D3A42000F0A2AB /* NSObject+MELocalizationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B7118D3A42000F0A2AB /* NSObject+MELocalizationExtensions.m */; };
+		798D9B8118D3A42000F0A2AB /* NSSet+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B7318D3A42000F0A2AB /* NSSet+MEExtensions.m */; };
+		798D9B8218D3A42000F0A2AB /* NSString+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B7518D3A42000F0A2AB /* NSString+MEExtensions.m */; };
+		798D9B8318D3A42000F0A2AB /* NSURL+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B7718D3A42000F0A2AB /* NSURL+MEExtensions.m */; };
+		798D9B8718D3A4B200F0A2AB /* MEFoundation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B8418D3A45E00F0A2AB /* MEFoundation.h */; };
+		798D9B8818D3A4B700F0A2AB /* MEDebugging.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B5C18D3A42000F0A2AB /* MEDebugging.h */; };
+		798D9B8918D3A4B700F0A2AB /* MEFunctions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B5D18D3A42000F0A2AB /* MEFunctions.h */; };
+		798D9B8A18D3A4B700F0A2AB /* MEGeometry.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B5E18D3A42000F0A2AB /* MEGeometry.h */; };
+		798D9B8B18D3A4B700F0A2AB /* MEMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B5F18D3A42000F0A2AB /* MEMacros.h */; };
+		798D9B8C18D3A4CB00F0A2AB /* NSArray+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6018D3A42000F0A2AB /* NSArray+MEExtensions.h */; };
+		798D9B8D18D3A4CB00F0A2AB /* NSBundle+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6218D3A42000F0A2AB /* NSBundle+MEExtensions.h */; };
+		798D9B8E18D3A4CB00F0A2AB /* NSData+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6418D3A42000F0A2AB /* NSData+MEExtensions.h */; };
+		798D9B8F18D3A4CB00F0A2AB /* NSDate+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6618D3A42000F0A2AB /* NSDate+MEExtensions.h */; };
+		798D9B9018D3A4CB00F0A2AB /* NSDictionary+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6818D3A42000F0A2AB /* NSDictionary+MEExtensions.h */; };
+		798D9B9118D3A4CB00F0A2AB /* NSFileManager+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6A18D3A42000F0A2AB /* NSFileManager+MEExtensions.h */; };
+		798D9B9218D3A4CB00F0A2AB /* NSMutableArray+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6C18D3A42000F0A2AB /* NSMutableArray+MEExtensions.h */; };
+		798D9B9318D3A4CB00F0A2AB /* NSObject+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6E18D3A42000F0A2AB /* NSObject+MEExtensions.h */; };
+		798D9B9418D3A4CB00F0A2AB /* NSObject+MELocalizationExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B7018D3A42000F0A2AB /* NSObject+MELocalizationExtensions.h */; };
+		798D9B9518D3A4CB00F0A2AB /* NSSet+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B7218D3A42000F0A2AB /* NSSet+MEExtensions.h */; };
+		798D9B9618D3A4CB00F0A2AB /* NSString+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B7418D3A42000F0A2AB /* NSString+MEExtensions.h */; };
+		798D9B9718D3A4CB00F0A2AB /* NSURL+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B7618D3A42000F0A2AB /* NSURL+MEExtensions.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +62,23 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				798D9B3C18D3A31A00F0A2AB /* MEFoundation.h in CopyFiles */,
+				798D9B8C18D3A4CB00F0A2AB /* NSArray+MEExtensions.h in CopyFiles */,
+				798D9B8D18D3A4CB00F0A2AB /* NSBundle+MEExtensions.h in CopyFiles */,
+				798D9B8E18D3A4CB00F0A2AB /* NSData+MEExtensions.h in CopyFiles */,
+				798D9B8F18D3A4CB00F0A2AB /* NSDate+MEExtensions.h in CopyFiles */,
+				798D9B9018D3A4CB00F0A2AB /* NSDictionary+MEExtensions.h in CopyFiles */,
+				798D9B9118D3A4CB00F0A2AB /* NSFileManager+MEExtensions.h in CopyFiles */,
+				798D9B9218D3A4CB00F0A2AB /* NSMutableArray+MEExtensions.h in CopyFiles */,
+				798D9B9318D3A4CB00F0A2AB /* NSObject+MEExtensions.h in CopyFiles */,
+				798D9B9418D3A4CB00F0A2AB /* NSObject+MELocalizationExtensions.h in CopyFiles */,
+				798D9B9518D3A4CB00F0A2AB /* NSSet+MEExtensions.h in CopyFiles */,
+				798D9B9618D3A4CB00F0A2AB /* NSString+MEExtensions.h in CopyFiles */,
+				798D9B9718D3A4CB00F0A2AB /* NSURL+MEExtensions.h in CopyFiles */,
+				798D9B8718D3A4B200F0A2AB /* MEFoundation.h in CopyFiles */,
+				798D9B8818D3A4B700F0A2AB /* MEDebugging.h in CopyFiles */,
+				798D9B8918D3A4B700F0A2AB /* MEFunctions.h in CopyFiles */,
+				798D9B8A18D3A4B700F0A2AB /* MEGeometry.h in CopyFiles */,
+				798D9B8B18D3A4B700F0A2AB /* MEMacros.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +88,41 @@
 		798D9B3318D3A31A00F0A2AB /* libMEFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		798D9B3618D3A31A00F0A2AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		798D9B3A18D3A31A00F0A2AB /* MEFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEFoundation-Prefix.pch"; sourceTree = "<group>"; };
-		798D9B3B18D3A31A00F0A2AB /* MEFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MEFoundation.h; sourceTree = "<group>"; };
-		798D9B3D18D3A31A00F0A2AB /* MEFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEFoundation.m; sourceTree = "<group>"; };
 		798D9B4318D3A31A00F0A2AB /* MEFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		798D9B4418D3A31A00F0A2AB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		798D9B4718D3A31A00F0A2AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		798D9B4E18D3A31A00F0A2AB /* MEFoundationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MEFoundationTests-Info.plist"; sourceTree = "<group>"; };
 		798D9B5018D3A31A00F0A2AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		798D9B5218D3A31A00F0A2AB /* MEFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEFoundationTests.m; sourceTree = "<group>"; };
+		798D9B5C18D3A42000F0A2AB /* MEDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDebugging.h; sourceTree = "<group>"; };
+		798D9B5D18D3A42000F0A2AB /* MEFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFunctions.h; sourceTree = "<group>"; };
+		798D9B5E18D3A42000F0A2AB /* MEGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEGeometry.h; sourceTree = "<group>"; };
+		798D9B5F18D3A42000F0A2AB /* MEMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMacros.h; sourceTree = "<group>"; };
+		798D9B6018D3A42000F0A2AB /* NSArray+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B6118D3A42000F0A2AB /* NSArray+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B6218D3A42000F0A2AB /* NSBundle+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B6318D3A42000F0A2AB /* NSBundle+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B6418D3A42000F0A2AB /* NSData+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B6518D3A42000F0A2AB /* NSData+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B6618D3A42000F0A2AB /* NSDate+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B6718D3A42000F0A2AB /* NSDate+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B6818D3A42000F0A2AB /* NSDictionary+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B6918D3A42000F0A2AB /* NSDictionary+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B6A18D3A42000F0A2AB /* NSFileManager+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B6B18D3A42000F0A2AB /* NSFileManager+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B6C18D3A42000F0A2AB /* NSMutableArray+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B6D18D3A42000F0A2AB /* NSMutableArray+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B6E18D3A42000F0A2AB /* NSObject+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B6F18D3A42000F0A2AB /* NSObject+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B7018D3A42000F0A2AB /* NSObject+MELocalizationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MELocalizationExtensions.h"; sourceTree = "<group>"; };
+		798D9B7118D3A42000F0A2AB /* NSObject+MELocalizationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MELocalizationExtensions.m"; sourceTree = "<group>"; };
+		798D9B7218D3A42000F0A2AB /* NSSet+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B7318D3A42000F0A2AB /* NSSet+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B7418D3A42000F0A2AB /* NSString+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B7518D3A42000F0A2AB /* NSString+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B7618D3A42000F0A2AB /* NSURL+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+MEExtensions.h"; sourceTree = "<group>"; };
+		798D9B7718D3A42000F0A2AB /* NSURL+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MEExtensions.m"; sourceTree = "<group>"; };
+		798D9B8418D3A45E00F0A2AB /* MEFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MEFoundation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +180,9 @@
 		798D9B3818D3A31A00F0A2AB /* MEFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				798D9B3B18D3A31A00F0A2AB /* MEFoundation.h */,
-				798D9B3D18D3A31A00F0A2AB /* MEFoundation.m */,
+				798D9B8418D3A45E00F0A2AB /* MEFoundation.h */,
+				798D9B8518D3A48400F0A2AB /* Headers */,
+				798D9B8618D3A48D00F0A2AB /* Categories */,
 				798D9B3918D3A31A00F0A2AB /* Supporting Files */,
 			);
 			path = MEFoundation;
@@ -141,6 +212,48 @@
 				798D9B4F18D3A31A00F0A2AB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		798D9B8518D3A48400F0A2AB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				798D9B5C18D3A42000F0A2AB /* MEDebugging.h */,
+				798D9B5D18D3A42000F0A2AB /* MEFunctions.h */,
+				798D9B5E18D3A42000F0A2AB /* MEGeometry.h */,
+				798D9B5F18D3A42000F0A2AB /* MEMacros.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		798D9B8618D3A48D00F0A2AB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				798D9B6018D3A42000F0A2AB /* NSArray+MEExtensions.h */,
+				798D9B6118D3A42000F0A2AB /* NSArray+MEExtensions.m */,
+				798D9B6218D3A42000F0A2AB /* NSBundle+MEExtensions.h */,
+				798D9B6318D3A42000F0A2AB /* NSBundle+MEExtensions.m */,
+				798D9B6418D3A42000F0A2AB /* NSData+MEExtensions.h */,
+				798D9B6518D3A42000F0A2AB /* NSData+MEExtensions.m */,
+				798D9B6618D3A42000F0A2AB /* NSDate+MEExtensions.h */,
+				798D9B6718D3A42000F0A2AB /* NSDate+MEExtensions.m */,
+				798D9B6818D3A42000F0A2AB /* NSDictionary+MEExtensions.h */,
+				798D9B6918D3A42000F0A2AB /* NSDictionary+MEExtensions.m */,
+				798D9B6A18D3A42000F0A2AB /* NSFileManager+MEExtensions.h */,
+				798D9B6B18D3A42000F0A2AB /* NSFileManager+MEExtensions.m */,
+				798D9B6C18D3A42000F0A2AB /* NSMutableArray+MEExtensions.h */,
+				798D9B6D18D3A42000F0A2AB /* NSMutableArray+MEExtensions.m */,
+				798D9B6E18D3A42000F0A2AB /* NSObject+MEExtensions.h */,
+				798D9B6F18D3A42000F0A2AB /* NSObject+MEExtensions.m */,
+				798D9B7018D3A42000F0A2AB /* NSObject+MELocalizationExtensions.h */,
+				798D9B7118D3A42000F0A2AB /* NSObject+MELocalizationExtensions.m */,
+				798D9B7218D3A42000F0A2AB /* NSSet+MEExtensions.h */,
+				798D9B7318D3A42000F0A2AB /* NSSet+MEExtensions.m */,
+				798D9B7418D3A42000F0A2AB /* NSString+MEExtensions.h */,
+				798D9B7518D3A42000F0A2AB /* NSString+MEExtensions.m */,
+				798D9B7618D3A42000F0A2AB /* NSURL+MEExtensions.h */,
+				798D9B7718D3A42000F0A2AB /* NSURL+MEExtensions.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +337,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				798D9B3E18D3A31A00F0A2AB /* MEFoundation.m in Sources */,
+				798D9B7E18D3A42000F0A2AB /* NSMutableArray+MEExtensions.m in Sources */,
+				798D9B7B18D3A42000F0A2AB /* NSDate+MEExtensions.m in Sources */,
+				798D9B8018D3A42000F0A2AB /* NSObject+MELocalizationExtensions.m in Sources */,
+				798D9B8218D3A42000F0A2AB /* NSString+MEExtensions.m in Sources */,
+				798D9B8318D3A42000F0A2AB /* NSURL+MEExtensions.m in Sources */,
+				798D9B7A18D3A42000F0A2AB /* NSData+MEExtensions.m in Sources */,
+				798D9B7C18D3A42000F0A2AB /* NSDictionary+MEExtensions.m in Sources */,
+				798D9B7918D3A42000F0A2AB /* NSBundle+MEExtensions.m in Sources */,
+				798D9B7D18D3A42000F0A2AB /* NSFileManager+MEExtensions.m in Sources */,
+				798D9B7818D3A42000F0A2AB /* NSArray+MEExtensions.m in Sources */,
+				798D9B7F18D3A42000F0A2AB /* NSObject+MEExtensions.m in Sources */,
+				798D9B8118D3A42000F0A2AB /* NSSet+MEExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

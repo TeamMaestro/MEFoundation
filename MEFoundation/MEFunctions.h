@@ -1,5 +1,5 @@
 //
-//  MEFoundation.h
+//  MEFunctions.h
 //  MEFrameworks
 //
 //  Created by William Towe on 4/17/13.
@@ -11,25 +11,25 @@
 // 
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#ifndef _ME_FOUNDATION_
-#define _ME_FOUNDATION_
+#ifndef _ME_FOUNDATION_FUNCTIONS_
+#define _ME_FOUNDATION_FUNCTIONS_
 
-#import <MEFoundation/MEDebugging.h>
-#import <MEFoundation/MEGeometry.h>
-#import <MEFoundation/MEFunctions.h>
-#import <MEFoundation/MEMacros.h>
+#import <dispatch/dispatch.h>
 
-#import <MEFoundation/NSArray+MEExtensions.h>
-#import <MEFoundation/NSBundle+MEExtensions.h>
-#import <MEFoundation/NSData+MEExtensions.h>
-#import <MEFoundation/NSDate+MEExtensions.h>
-#import <MEFoundation/NSDictionary+MEExtensions.h>
-#import <MEFoundation/NSFileManager+MEExtensions.h>
-#import <MEFoundation/NSMutableArray+MEExtensions.h>
-#import <MEFoundation/NSObject+MEExtensions.h>
-#import <MEFoundation/NSObject+MELocalizationExtensions.h>
-#import <MEFoundation/NSSet+MEExtensions.h>
-#import <MEFoundation/NSString+MEExtensions.h>
-#import <MEFoundation/NSURL+MEExtensions.h>
+static inline void MEDispatchMainAsync(void (^block)(void)) {
+    dispatch_async(dispatch_get_main_queue(), block);
+}
+
+static inline void MEDispatchMainSync(void (^block)(void)) {
+    dispatch_sync(dispatch_get_main_queue(), block);
+}
+
+static inline void MEDispatchDefaultAsync(void (^block)(void)) {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
+}
+
+static inline void MEDispatchBackgroundAsync(void (^block)(void)) {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), block);
+}
 
 #endif
