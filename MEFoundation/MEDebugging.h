@@ -64,8 +64,7 @@ static inline NSTimeInterval METimeBlock(void (^block)(void)) {
     
     return (NSTimeInterval)nanos / NSEC_PER_SEC;
 }
-/* close NS_BLOCKS_AVAILABLE */
+
 #endif
 
-/* close #ifndef */
 #endif
