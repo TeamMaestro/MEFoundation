@@ -25,15 +25,11 @@ NSTimeInterval const METimeIntervalOneWeek = 604800;
 @implementation NSDate (MEExtensions)
 
 - (BOOL)ME_isBeforeDate:(NSDate *)otherDate {
-    if ([otherDate isKindOfClass:[NSDate class]])
-        return ([self compare:otherDate] == NSOrderedAscending);
-    return NO;
+    return [[self earlierDate:otherDate] isEqualToDate:self];
 }
 
 - (BOOL)ME_isAfterDate:(NSDate *)otherDate {
-    if ([otherDate isKindOfClass:[NSDate class]])
-        return ([self compare:otherDate] == NSOrderedDescending);
-    return NO;
+    return [[self laterDate:otherDate] isEqualToDate:self];
 }
 
 - (NSDateComponents *)ME_components:(NSUInteger)unitFlags toDate:(NSDate *)toDate {

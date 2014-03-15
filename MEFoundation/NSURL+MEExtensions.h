@@ -73,7 +73,7 @@
  @param baseString The base string for the url
  @param parameters A dictionary of parameters that will be appended to _baseString_
  @exception NSException Thrown if _baseString_ is nil
- @return An `NSURL` instance
+ @return The new url
  */
 + (NSURL *)ME_URLWithBaseString:(NSString *)baseString parameters:(NSDictionary *)parameters;
 

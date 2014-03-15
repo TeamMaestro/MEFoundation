@@ -18,7 +18,6 @@
 		798D9B7918D3A42000F0A2AB /* NSBundle+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6318D3A42000F0A2AB /* NSBundle+MEExtensions.m */; };
 		798D9B7A18D3A42000F0A2AB /* NSData+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6518D3A42000F0A2AB /* NSData+MEExtensions.m */; };
 		798D9B7B18D3A42000F0A2AB /* NSDate+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6718D3A42000F0A2AB /* NSDate+MEExtensions.m */; };
-		798D9B7C18D3A42000F0A2AB /* NSDictionary+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6918D3A42000F0A2AB /* NSDictionary+MEExtensions.m */; };
 		798D9B7D18D3A42000F0A2AB /* NSFileManager+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6B18D3A42000F0A2AB /* NSFileManager+MEExtensions.m */; };
 		798D9B7E18D3A42000F0A2AB /* NSMutableArray+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6D18D3A42000F0A2AB /* NSMutableArray+MEExtensions.m */; };
 		798D9B7F18D3A42000F0A2AB /* NSObject+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6F18D3A42000F0A2AB /* NSObject+MEExtensions.m */; };
@@ -35,7 +34,6 @@
 		798D9B8D18D3A4CB00F0A2AB /* NSBundle+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6218D3A42000F0A2AB /* NSBundle+MEExtensions.h */; };
 		798D9B8E18D3A4CB00F0A2AB /* NSData+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6418D3A42000F0A2AB /* NSData+MEExtensions.h */; };
 		798D9B8F18D3A4CB00F0A2AB /* NSDate+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6618D3A42000F0A2AB /* NSDate+MEExtensions.h */; };
-		798D9B9018D3A4CB00F0A2AB /* NSDictionary+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6818D3A42000F0A2AB /* NSDictionary+MEExtensions.h */; };
 		798D9B9118D3A4CB00F0A2AB /* NSFileManager+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6A18D3A42000F0A2AB /* NSFileManager+MEExtensions.h */; };
 		798D9B9218D3A4CB00F0A2AB /* NSMutableArray+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6C18D3A42000F0A2AB /* NSMutableArray+MEExtensions.h */; };
 		798D9B9318D3A4CB00F0A2AB /* NSObject+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B6E18D3A42000F0A2AB /* NSObject+MEExtensions.h */; };
@@ -66,7 +64,6 @@
 				798D9B8D18D3A4CB00F0A2AB /* NSBundle+MEExtensions.h in CopyFiles */,
 				798D9B8E18D3A4CB00F0A2AB /* NSData+MEExtensions.h in CopyFiles */,
 				798D9B8F18D3A4CB00F0A2AB /* NSDate+MEExtensions.h in CopyFiles */,
-				798D9B9018D3A4CB00F0A2AB /* NSDictionary+MEExtensions.h in CopyFiles */,
 				798D9B9118D3A4CB00F0A2AB /* NSFileManager+MEExtensions.h in CopyFiles */,
 				798D9B9218D3A4CB00F0A2AB /* NSMutableArray+MEExtensions.h in CopyFiles */,
 				798D9B9318D3A4CB00F0A2AB /* NSObject+MEExtensions.h in CopyFiles */,
@@ -106,8 +103,6 @@
 		798D9B6518D3A42000F0A2AB /* NSData+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MEExtensions.m"; sourceTree = "<group>"; };
 		798D9B6618D3A42000F0A2AB /* NSDate+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MEExtensions.h"; sourceTree = "<group>"; };
 		798D9B6718D3A42000F0A2AB /* NSDate+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MEExtensions.m"; sourceTree = "<group>"; };
-		798D9B6818D3A42000F0A2AB /* NSDictionary+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MEExtensions.h"; sourceTree = "<group>"; };
-		798D9B6918D3A42000F0A2AB /* NSDictionary+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MEExtensions.m"; sourceTree = "<group>"; };
 		798D9B6A18D3A42000F0A2AB /* NSFileManager+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+MEExtensions.h"; sourceTree = "<group>"; };
 		798D9B6B18D3A42000F0A2AB /* NSFileManager+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+MEExtensions.m"; sourceTree = "<group>"; };
 		798D9B6C18D3A42000F0A2AB /* NSMutableArray+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MEExtensions.h"; sourceTree = "<group>"; };
@@ -236,8 +231,6 @@
 				798D9B6518D3A42000F0A2AB /* NSData+MEExtensions.m */,
 				798D9B6618D3A42000F0A2AB /* NSDate+MEExtensions.h */,
 				798D9B6718D3A42000F0A2AB /* NSDate+MEExtensions.m */,
-				798D9B6818D3A42000F0A2AB /* NSDictionary+MEExtensions.h */,
-				798D9B6918D3A42000F0A2AB /* NSDictionary+MEExtensions.m */,
 				798D9B6A18D3A42000F0A2AB /* NSFileManager+MEExtensions.h */,
 				798D9B6B18D3A42000F0A2AB /* NSFileManager+MEExtensions.m */,
 				798D9B6C18D3A42000F0A2AB /* NSMutableArray+MEExtensions.h */,
@@ -343,7 +336,6 @@
 				798D9B8218D3A42000F0A2AB /* NSString+MEExtensions.m in Sources */,
 				798D9B8318D3A42000F0A2AB /* NSURL+MEExtensions.m in Sources */,
 				798D9B7A18D3A42000F0A2AB /* NSData+MEExtensions.m in Sources */,
-				798D9B7C18D3A42000F0A2AB /* NSDictionary+MEExtensions.m in Sources */,
 				798D9B7918D3A42000F0A2AB /* NSBundle+MEExtensions.m in Sources */,
 				798D9B7D18D3A42000F0A2AB /* NSFileManager+MEExtensions.m in Sources */,
 				798D9B7818D3A42000F0A2AB /* NSArray+MEExtensions.m in Sources */,
@@ -533,6 +525,7 @@
 				798D9B5818D3A31A00F0A2AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		798D9B5918D3A31A00F0A2AB /* Build configuration list for PBXNativeTarget "MEFoundationTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +534,7 @@
 				798D9B5B18D3A31A00F0A2AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

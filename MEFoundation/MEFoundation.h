@@ -23,7 +23,6 @@
 #import <MEFoundation/NSBundle+MEExtensions.h>
 #import <MEFoundation/NSData+MEExtensions.h>
 #import <MEFoundation/NSDate+MEExtensions.h>
-#import <MEFoundation/NSDictionary+MEExtensions.h>
 #import <MEFoundation/NSFileManager+MEExtensions.h>
 #import <MEFoundation/NSMutableArray+MEExtensions.h>
 #import <MEFoundation/NSObject+MEExtensions.h>
