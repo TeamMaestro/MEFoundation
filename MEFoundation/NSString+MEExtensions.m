@@ -105,10 +105,25 @@ static inline uint8_t MEBinaryValueForCharacter(unichar character) {
 @implementation NSString (MEExtensions)
 
 - (NSString *)ME_stringByReplacingNewlinesWithString:(NSString *)replaceString; {
-    return [self stringByReplacingOccurrencesOfString:@"\n" 
-                                           withString:replaceString 
-                                              options:NSLiteralSearch 
-                                                range:NSMakeRange(0, self.length)];
+    NSParameterAssert(replaceString);
+    
+    NSMutableString *retval = [self mutableCopy];
+    NSCharacterSet *set = [NSCharacterSet newlineCharacterSet];
+    NSUInteger location = 0;
+    NSRange range;
+    
+    while (location < retval.length) {
+        range = [retval rangeOfCharacterFromSet:set options:0 range:NSMakeRange(location, retval.length - location)];
+        
+        if (range.location == NSNotFound)
+            break;
+        
+        [retval replaceCharactersInRange:range withString:replaceString];
+        
+        location = NSMaxRange(range);
+    }
+    
+    return [retval copy];
 }
 
 - (NSString *)ME_reverseString; {
@@ -127,9 +142,7 @@ static inline uint8_t MEBinaryValueForCharacter(unichar character) {
 	
 	free(stringChars);
 	
-	return [[NSString alloc] initWithCharactersNoCopy:reverseStringChars
-                                                length:stringLength 
-                                          freeWhenDone:YES];
+	return [[NSString alloc] initWithCharactersNoCopy:reverseStringChars length:stringLength freeWhenDone:YES];
 }
 
 - (NSString *)ME_URLEncodedString {

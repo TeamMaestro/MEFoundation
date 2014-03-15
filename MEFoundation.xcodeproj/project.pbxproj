@@ -13,7 +13,6 @@
 		798D9B4818D3A31A00F0A2AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D9B4718D3A31A00F0A2AB /* UIKit.framework */; };
 		798D9B4B18D3A31A00F0A2AB /* libMEFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D9B3318D3A31A00F0A2AB /* libMEFoundation.a */; };
 		798D9B5118D3A31A00F0A2AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 798D9B4F18D3A31A00F0A2AB /* InfoPlist.strings */; };
-		798D9B5318D3A31A00F0A2AB /* MEFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B5218D3A31A00F0A2AB /* MEFoundationTests.m */; };
 		798D9B7818D3A42000F0A2AB /* NSArray+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6118D3A42000F0A2AB /* NSArray+MEExtensions.m */; };
 		798D9B7918D3A42000F0A2AB /* NSBundle+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6318D3A42000F0A2AB /* NSBundle+MEExtensions.m */; };
 		798D9B7A18D3A42000F0A2AB /* NSData+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B6518D3A42000F0A2AB /* NSData+MEExtensions.m */; };
@@ -41,6 +40,7 @@
 		798D9B9518D3A4CB00F0A2AB /* NSSet+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B7218D3A42000F0A2AB /* NSSet+MEExtensions.h */; };
 		798D9B9618D3A4CB00F0A2AB /* NSString+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B7418D3A42000F0A2AB /* NSString+MEExtensions.h */; };
 		798D9B9718D3A4CB00F0A2AB /* NSURL+MEExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 798D9B7618D3A42000F0A2AB /* NSURL+MEExtensions.h */; };
+		798D9B9918D3DF2200F0A2AB /* NSString+MEExtensionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B9818D3DF2200F0A2AB /* NSString+MEExtensionsTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +90,6 @@
 		798D9B4718D3A31A00F0A2AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		798D9B4E18D3A31A00F0A2AB /* MEFoundationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MEFoundationTests-Info.plist"; sourceTree = "<group>"; };
 		798D9B5018D3A31A00F0A2AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		798D9B5218D3A31A00F0A2AB /* MEFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEFoundationTests.m; sourceTree = "<group>"; };
 		798D9B5C18D3A42000F0A2AB /* MEDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDebugging.h; sourceTree = "<group>"; };
 		798D9B5D18D3A42000F0A2AB /* MEFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFunctions.h; sourceTree = "<group>"; };
 		798D9B5E18D3A42000F0A2AB /* MEGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEGeometry.h; sourceTree = "<group>"; };
@@ -118,6 +117,7 @@
 		798D9B7618D3A42000F0A2AB /* NSURL+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+MEExtensions.h"; sourceTree = "<group>"; };
 		798D9B7718D3A42000F0A2AB /* NSURL+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MEExtensions.m"; sourceTree = "<group>"; };
 		798D9B8418D3A45E00F0A2AB /* MEFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MEFoundation.h; sourceTree = "<group>"; };
+		798D9B9818D3DF2200F0A2AB /* NSString+MEExtensionsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MEExtensionsTestCase.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +194,8 @@
 		798D9B4C18D3A31A00F0A2AB /* MEFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
-				798D9B5218D3A31A00F0A2AB /* MEFoundationTests.m */,
 				798D9B4D18D3A31A00F0A2AB /* Supporting Files */,
+				798D9B9818D3DF2200F0A2AB /* NSString+MEExtensionsTestCase.m */,
 			);
 			path = MEFoundationTests;
 			sourceTree = "<group>";
@@ -348,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				798D9B5318D3A31A00F0A2AB /* MEFoundationTests.m in Sources */,
+				798D9B9918D3DF2200F0A2AB /* NSString+MEExtensionsTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +484,13 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MEFoundationTests/MEFoundationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -501,6 +508,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MEFoundation/MEFoundation-Prefix.pch";
 				INFOPLIST_FILE = "MEFoundationTests/MEFoundationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
