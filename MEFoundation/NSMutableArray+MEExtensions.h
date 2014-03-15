@@ -29,7 +29,7 @@
 - (void)ME_push:(id)object;
 
 /**
- Calls [self ME_removeFirstObject]
+ Calls `[self ME_removeFirstObject]`.
  */
 - (void)ME_pop;
 
