@@ -1,6 +1,6 @@
 //
 //  NSObject+MELocalizationExtensions.m
-//  MEFrameworks
+//  MEFoundation
 //
 //  Created by William Towe on 8/13/13.
 //  Copyright (c) 2013 Maestro. All rights reserved.

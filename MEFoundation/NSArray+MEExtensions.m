@@ -1,6 +1,6 @@
 //
 //  NSArray+MEExtensions.m
-//  MEFrameworks
+//  MEFoundation
 //
 //  Created by Joshua Kovach on 4/19/12.
 //  Copyright (c) 2012 Maestro. All rights reserved.

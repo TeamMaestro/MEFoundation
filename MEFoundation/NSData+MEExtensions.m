@@ -1,6 +1,6 @@
 //
 //  NSData+MEExtensions.m
-//  MEFrameworks
+//  MEFoundation
 //
 //  Created by William Towe on 9/11/12.
 //  Copyright (c) 2012 Maestro. All rights reserved.

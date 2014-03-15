@@ -1,6 +1,6 @@
 //
 //  NSMutableArray+MEExtensions.h
-//  MEFrameworks
+//  MEFoundation
 //
 //  Created by William Towe on 3/13/14.
 //  Copyright (c) 2014 Maestro. All rights reserved.

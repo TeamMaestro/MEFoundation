@@ -1,6 +1,6 @@
 //
 //  MEFunctions.h
-//  MEFrameworks
+//  MEFoundation
 //
 //  Created by William Towe on 4/17/13.
 //  Copyright (c) 2013 Maestro. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  MEGeometry.h
-//  MEFrameworks
+//  MEFoundation
 //
 //  Created by William Towe on 4/23/12.
 //  Copyright (c) 2013 Maestro. All rights reserved.

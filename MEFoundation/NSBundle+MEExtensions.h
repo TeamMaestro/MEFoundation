@@ -1,6 +1,6 @@
 //
 //  NSBundle+MEExtensions.h
-//  MEFrameworks
+//  MEFoundation
 //
 //  Created by William Towe on 5/8/13.
 //  Copyright (c) 2013 Maestro. All rights reserved.

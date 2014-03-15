@@ -1,6 +1,6 @@
 //
 //  NSDate+MEExtensions.h
-//  MEFrameworks
+//  MEFoundation
 //
 //  Created by Joshua Kovach on 4/27/12.
 //  Copyright (c) 2012 Maestro. All rights reserved.

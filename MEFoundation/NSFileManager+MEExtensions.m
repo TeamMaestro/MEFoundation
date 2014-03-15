@@ -1,6 +1,6 @@
 //
 //  NSFileManager+MEExtensions.m
-//  MEFrameworks
+//  MEFoundation
 //
 //  Created by William Towe on 4/19/13.
 //  Copyright (c) 2013 Maestro. All rights reserved.
