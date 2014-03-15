@@ -194,8 +194,8 @@
 		798D9B4C18D3A31A00F0A2AB /* MEFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
-				798D9B4D18D3A31A00F0A2AB /* Supporting Files */,
 				798D9B9818D3DF2200F0A2AB /* NSString+MEExtensionsTestCase.m */,
+				798D9B4D18D3A31A00F0A2AB /* Supporting Files */,
 			);
 			path = MEFoundationTests;
 			sourceTree = "<group>";
