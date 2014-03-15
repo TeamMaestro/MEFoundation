@@ -20,6 +20,7 @@
  
  @param replaceString The string with which to replace all newlines characters in the receiver with
  @return The transformed string
+ @exception NSException Thrown if _replaceString_ is nil
  */
 - (NSString *)ME_stringByReplacingNewlinesWithString:(NSString *)replaceString;
 
@@ -42,7 +43,7 @@
 - (NSString *)ME_URLEncodedString;
 
 /**
- Returns the result of `[[NSUUID UUID] UUIDString]`.
+ Alias of `[[NSUUID UUID] UUIDString]`.
  
  @return The UUID string
  */
