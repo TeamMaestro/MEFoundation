@@ -34,7 +34,7 @@ NSString *const MELocalizationUserInfoKeySelectedLocalizationDisplayName = @"MEL
 @implementation NSObject (MELocalizationExtensions)
 
 + (NSString *)ME_defaultLocalization {
-    return [[NSLocale preferredLanguages] objectAtIndex:0];
+    return [NSLocale preferredLanguages].firstObject;
 }
 
 + (NSString *)ME_selectedLocalization {

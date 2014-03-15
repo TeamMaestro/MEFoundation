@@ -16,23 +16,23 @@
 @interface NSBundle (MEExtensions)
 
 /**
- Calls [[self infoDictionary] objectForKey:@"CFBundleIdentifier"]
+ Calls `[[self infoDictionary] objectForKey:@"CFBundleIdentifier"]`.
  */
 @property (readonly,nonatomic) NSString *ME_identifier;
 /**
- Calls [[self infoDictionary] objectForKey:@"CFBundleDisplayName"]
+ Calls `[[self infoDictionary] objectForKey:@"CFBundleDisplayName"]`.
  */
 @property (readonly,nonatomic) NSString *ME_displayName;
 /**
- Calls [[self infoDictionary] objectForKey:@"CFBundleExecutable"]
+ Calls `[[self infoDictionary] objectForKey:@"CFBundleExecutable"]`.
  */
 @property (readonly,nonatomic) NSString *ME_executable;
 /**
- Calls [[self infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+ Calls `[[self infoDictionary] objectForKey:@"CFBundleShortVersionString"]`.
  */
 @property (readonly,nonatomic) NSString *ME_shortVersionString;
 /**
- Calls [[self infoDictionary] objectForKey:@"CFBundleVersion"]
+ Calls `[[self infoDictionary] objectForKey:@"CFBundleVersion"]`.
  */
 @property (readonly,nonatomic) NSString *ME_version;
 

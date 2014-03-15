@@ -48,7 +48,14 @@
 #import <CoreGraphics/CGBase.h>
 #include <mach/mach_time.h>
 
-// original timing function can be found at http://weblog.bignerdranch.com/?p=316
+/**
+ Returns the amount of time a given block takes to execute in seconds.
+ 
+ The original timing function can be found at http://weblog.bignerdranch.com/?p=316
+ 
+ @param block The block to time
+ @return The amount of time _block_ took to execute
+ */
 static inline NSTimeInterval METimeBlock(void (^block)(void)) {
 	mach_timebase_info_data_t info;
 	
