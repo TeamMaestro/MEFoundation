@@ -12,7 +12,6 @@ Pod::Spec.new do |spec|
   spec.osx.deployment_target = "10.9"
   
   spec.requires_arc = true
-  
   spec.frameworks = "Foundation"
   spec.ios.frameworks = "UIKit"
   spec.osx.frameworks = "AppKit"
