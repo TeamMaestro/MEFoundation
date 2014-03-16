@@ -736,7 +736,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MEFoundationFramework.framework/Versions/A/MEFoundationFramework";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libMEFoundation.a";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -766,7 +766,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MEFoundationFramework.framework/Versions/A/MEFoundationFramework";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libMEFoundation.a";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
