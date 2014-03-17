@@ -92,7 +92,7 @@ NSTimeInterval const METimeIntervalOneWeek = 604800;
     NSParameterAssert(date);
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitWeekday fromDate:date];
+    NSDateComponents *comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitWeekday fromDate:date];
     
     [comps setDay:comps.day - comps.weekday + calendar.firstWeekday + NSMaxRange([calendar maximumRangeOfUnit:NSCalendarUnitWeekday]) - 1];
     [comps setHour:NSMaxRange([calendar maximumRangeOfUnit:NSCalendarUnitHour]) - 1];
