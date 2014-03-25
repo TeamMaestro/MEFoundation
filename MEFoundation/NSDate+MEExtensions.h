@@ -157,9 +157,35 @@ extern NSTimeInterval const METimeIntervalOneWeek;
  */
 - (NSDate *)ME_endOfMonth;
 
+/**
+ Returns a new date from _date_ with the day set to the first day of the year and the time set to 00:00:01 in the local time zone.
+ 
+ @param date The date for which to return the start of the year
+ @return The date representing the start of the year
+ @exception NSException Thrown if _date_ is nil
+ */
 + (NSDate *)ME_startOfYearForDate:(NSDate *)date;
+/**
+ Calls `ME_startOfYearForDate:`, passing self.
+ 
+ @return The date representing the start of the year for self
+ @see ME_startOfYearForDate:
+ */
 - (NSDate *)ME_startOfYear;
+/**
+ Returns a new date from _date_ with the day set to the last day of the year and the time set to 23:59:59 in the local time zone.
+ 
+ @param date The date for which to return the end of the year
+ @return The date representing the end of the year
+ @exception NSException Thrown if _date_ is nil
+ */
 + (NSDate *)ME_endOfYearForDate:(NSDate *)date;
+/**
+ Calls `ME_endOfYearForDate:`, passing self.
+ 
+ @return The date representing the end of the year for self
+ @see ME_endOfYearForDate:
+ */
 - (NSDate *)ME_endOfYear;
 
 @end

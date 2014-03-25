@@ -148,7 +148,7 @@ NSTimeInterval const METimeIntervalOneWeek = 604800;
     [comps setDay:[calendar maximumRangeOfUnit:NSCalendarUnitDay].location];
     [comps setHour:[calendar maximumRangeOfUnit:NSCalendarUnitHour].location];
     [comps setMinute:[calendar maximumRangeOfUnit:NSCalendarUnitMinute].location];
-    [comps setSecond:[calendar maximumRangeOfUnit:NSCalendarUnitSecond].location];
+    [comps setSecond:[calendar maximumRangeOfUnit:NSCalendarUnitSecond].location + 1];
     
     return [calendar dateFromComponents:comps];
 }
@@ -162,7 +162,7 @@ NSTimeInterval const METimeIntervalOneWeek = 604800;
     NSDateComponents *comps = [[NSDateComponents alloc] init];
     
     [comps setYear:1];
-    [comps setSecond:-1];
+    [comps setSecond:-2];
     
     return [calendar dateByAddingComponents:comps toDate:[date ME_startOfYear] options:0];
 }
