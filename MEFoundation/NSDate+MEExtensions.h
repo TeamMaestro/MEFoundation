@@ -157,4 +157,9 @@ extern NSTimeInterval const METimeIntervalOneWeek;
  */
 - (NSDate *)ME_endOfMonth;
 
++ (NSDate *)ME_startOfYearForDate:(NSDate *)date;
+- (NSDate *)ME_startOfYear;
++ (NSDate *)ME_endOfYearForDate:(NSDate *)date;
+- (NSDate *)ME_endOfYear;
+
 @end

@@ -138,4 +138,36 @@ NSTimeInterval const METimeIntervalOneWeek = 604800;
     return [self.class ME_endOfMonthForDate:self];
 }
 
++ (NSDate *)ME_startOfYearForDate:(NSDate *)date; {
+    NSParameterAssert(date);
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *comps = [calendar components:NSCalendarUnitYear fromDate:date];
+    
+    [comps setMonth:[calendar maximumRangeOfUnit:NSCalendarUnitMonth].location];
+    [comps setDay:[calendar maximumRangeOfUnit:NSCalendarUnitDay].location];
+    [comps setHour:[calendar maximumRangeOfUnit:NSCalendarUnitHour].location];
+    [comps setMinute:[calendar maximumRangeOfUnit:NSCalendarUnitMinute].location];
+    [comps setSecond:[calendar maximumRangeOfUnit:NSCalendarUnitSecond].location];
+    
+    return [calendar dateFromComponents:comps];
+}
+- (NSDate *)ME_startOfYear; {
+    return [self.class ME_startOfYearForDate:self];
+}
++ (NSDate *)ME_endOfYearForDate:(NSDate *)date; {
+    NSParameterAssert(date);
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    
+    [comps setYear:1];
+    [comps setSecond:-1];
+    
+    return [calendar dateByAddingComponents:comps toDate:[date ME_startOfYear] options:0];
+}
+- (NSDate *)ME_endOfYear; {
+    return [self.class ME_endOfYearForDate:self];
+}
+
 @end
