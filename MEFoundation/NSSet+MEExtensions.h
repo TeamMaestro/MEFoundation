@@ -27,4 +27,13 @@
  @return The mutable array containing the receiver's objects
  */
 - (NSMutableArray *)ME_mutableArray;
+
+/**
+ Returns a set containing all the objects in the receiver minus object
+ 
+ @return A new set containing the reciever's objects minus object
+ */
+- (NSSet *)ME_setByRemovingObject:(id)object;
+
+
 @end

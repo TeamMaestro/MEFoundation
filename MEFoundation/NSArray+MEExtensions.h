@@ -36,4 +36,15 @@
  */
 - (NSArray *)ME_shuffledArray;
 
+/**
+ Creates and returns a new array with the passed in object removed from the receiver.
+ 
+ @return The array created by removing object
+ */
+- (NSArray *)ME_arrayByRemovingObject:(id)object;
+
+
+
+
+
 @end
