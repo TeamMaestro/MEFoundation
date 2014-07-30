@@ -75,6 +75,8 @@
 		79E1F9D518D4F1A000A2414E /* NSString+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B7518D3A42000F0A2AB /* NSString+MEExtensions.m */; };
 		79E1F9D618D4F1A000A2414E /* NSURL+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9B7718D3A42000F0A2AB /* NSURL+MEExtensions.m */; };
 		79E1F9D818D4F27700A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1F9D718D4F27700A2414E /* Foundation.framework */; };
+		9C074021198964AB00F8ED2B /* NSArray_MEFoundationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C074020198964AB00F8ED2B /* NSArray_MEFoundationTestCase.m */; };
+		9C07402319896A2600F8ED2B /* NSSet_MEFoundationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C07402219896A2600F8ED2B /* NSSet_MEFoundationTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +174,8 @@
 		798D9C9E18D4EECA00F0A2AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79E1F9D718D4F27700A2414E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		79E1F9D918D4F29700A2414E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		9C074020198964AB00F8ED2B /* NSArray_MEFoundationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_MEFoundationTestCase.m; sourceTree = "<group>"; };
+		9C07402219896A2600F8ED2B /* NSSet_MEFoundationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSet_MEFoundationTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				798D9B9818D3DF2200F0A2AB /* NSString+MEExtensionsTestCase.m */,
+				9C074020198964AB00F8ED2B /* NSArray_MEFoundationTestCase.m */,
+				9C07402219896A2600F8ED2B /* NSSet_MEFoundationTestCase.m */,
 				798D9B4D18D3A31A00F0A2AB /* Supporting Files */,
 			);
 			path = MEFoundationTests;
@@ -562,6 +568,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				798D9B9918D3DF2200F0A2AB /* NSString+MEExtensionsTestCase.m in Sources */,
+				9C074021198964AB00F8ED2B /* NSArray_MEFoundationTestCase.m in Sources */,
+				9C07402319896A2600F8ED2B /* NSSet_MEFoundationTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

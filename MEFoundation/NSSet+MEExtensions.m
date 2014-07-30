@@ -24,4 +24,14 @@
 - (NSMutableArray *)ME_mutableArray; {
     return [self.allObjects mutableCopy];
 }
+
+- (NSSet *)ME_setByRemovingObject:(id)object; {
+    
+    if (self.count == 0) return [NSSet set];
+    
+    NSMutableSet *ms = [self mutableCopy];
+    [ms minusSet:[NSSet setWithObject:object]];
+    return ms;
+}
+
 @end

@@ -35,4 +35,16 @@
     return retval;
 }
 
+- (NSArray *)ME_arrayByRemovingObject:(id)object; {
+    
+    if (self.count == 0) return [NSArray array];
+    
+    NSMutableArray *results = [NSMutableArray arrayWithCapacity:self.count-1];
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if (![obj isEqual:object])
+            [results addObject:obj];
+    }];
+    return results;
+}
+
 @end
