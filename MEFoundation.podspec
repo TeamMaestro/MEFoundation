@@ -1,10 +1,10 @@
 Pod::Spec.new do |spec|
   spec.name = "MEFoundation"
-  spec.version = "1.0.9"
+  spec.version = "1.0.10"
   spec.authors = {"William Towe" => "willbur1984@gmail.com", "Norm Barnard" => "norm@meetmaestro.com", "Jason Anderson" => "jason@meetmaestro.com", "Josh Kovach" => "kovach.jc@gmail.com "}
   spec.license = {:type => "MIT", :file => "LICENSE.txt"}
-  spec.homepage = "https://github.com/MaestroElearning/MEFoundation"
-  spec.source = {:git => "https://github.com/MaestroElearning/MEFoundation.git", :tag => spec.version.to_s}
+  spec.homepage = "https://github.com/TeamMaestro/MEFoundation"
+  spec.source = {:git => "https://github.com/TeamMaestro/MEFoundation.git", :tag => spec.version.to_s}
   spec.summary = "A collection of classes that extend the Foundation framework."
   spec.description = "The major Foundation classes are covered, including NSArray/NSMutableArray, NSBundle, NSData, NSDate, NSFileManager, NSObject, NSSet, NSString, and NSURL. Unit tests are included for non-trivial methods."
   
