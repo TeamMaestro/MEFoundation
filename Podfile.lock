@@ -1,0 +1,14 @@
+PODS:
+  - MEFoundation (1.1.0)
+
+DEPENDENCIES:
+  - MEFoundation (from `./`)
+
+EXTERNAL SOURCES:
+  MEFoundation:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  MEFoundation: 5f2ba93abbcc05a40a484f760434eb46b521d4ef
+
+COCOAPODS: 0.39.0
